@@ -29,7 +29,7 @@ merged <- rbind(UW,MSU)
 #plot  team scores throughout game
 library(ggplot2)
 game_plot <- ggplot(merged, aes(x=time, y=cumulative))
-game_plot+geom_line(aes(color=team))+xlab("Time")+ylab("Cumulative Score")+
+game_plot+geom_line(aes(color=team))+xlab("Time")+ylab("Score Total")+
   scale_color_manual(values=c("darkgreen", "red"))
 
 #Question 2: number game
